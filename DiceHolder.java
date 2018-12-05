@@ -15,7 +15,7 @@ public class DiceHolder{
 	}
 	public void shake(){
 		for(int i=0;i<holder.size();i++){
-			holder.set(i, ((int)(Math.random()*6)+1));
+			holder.get(i).roll();
 		}
 	}
 	public String toString(){
@@ -23,5 +23,6 @@ public class DiceHolder{
 		for(int i=0;i<holder.size();i++){
 			s+=holder.get(i)+"\n";
 		}
+		return s;
 	}
 }

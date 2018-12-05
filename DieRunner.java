@@ -16,9 +16,9 @@ public class DieRunner{
 		}
 		System.out.println("Number of tries to get snake eyes: " + counter);
 
-
+		int a=1;
+		while(a>0){
+			Die die = new Die((int)(Math.random()*23)+2);
+		}
 	}
-
-
-
 }
